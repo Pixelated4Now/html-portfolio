@@ -3,6 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <title>Chase's Portfolio</title>
+        <link rel="shortcut icon" href="./assets/images/post.png">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+
+            body {
+                min-height: 100vh;
+            }
+
+            h1, h2 {
+                font-family: "Ysabeau SC", sans-serif;
+                text-align: center;
+            }
+
+            h2 {
+                opacity: 0.7;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+
+         
+            a:visited {
+                text-decoration: none;
+                color: dimgray;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: crimson;
+            }
+
+            .projects {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly; 
+            }
+            .footer {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        </style>
     </head>
     <body>
         <h1>Chase Roxanne Yearling's Portfolio</h1>
@@ -10,14 +53,29 @@
 
         <hr noshade />
 
-        <a href="public/movie-ranking.html"><h3>Movie Ranking Project</h3></a>
-        <img src="assets/images/movie-ranking.png" height="200" alt="Preview of the movie ranking project" />
-        <a href="public/birthday-invite.html"><h3>Birthday Invite Project</h3></a>
-        <img src="assets/images/birthday-invite.png" height="200" alt="Preview of the birthday invite project" />
+        <div class="projects">
+            <div class="project_one">
+                <a href="public/movie-ranking.html"><h3>Movie Ranking Project</h3></a>
+                <img src="assets/images/movie-ranking.png" height="300" alt="Preview of the movie ranking project" />
+            </div>
 
-        <hr noshade />
-        <a href="public/about.html">About Me</a>
-        <a href="public/contact.html">Contact Me</a>
+            <div class="project_two">
+                <a href="public/birthday-invite.html"><h3>Birthday Invite Project</h3></a>
+                <img src="assets/images/birthday-invite.png" height="300" alt="Preview of the birthday invite project" />
+            </div>
+
+            <div class="project_three">
+                <a href="public/MMP.html"><h3>Motivational Meme Project</h3></a>
+                <img src="assets/images/MMP.png" height="300" alt="Preview of the motivational meme project" />
+            </div>
+        </div>
+
+        
+        <div class="footer">
+            <hr noshade />
+            <a href="public/about.html">About Me</a>
+            <a href="public/contact.html">Contact Me</a>
+        </div>
 
     </body>
 </html>
